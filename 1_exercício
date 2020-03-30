@@ -1,0 +1,43 @@
+//Vinicius Catelan e Wagner Evandro
+<?php
+class Veiculo{
+  public $modelo;
+  public $velocidade;
+  public $passageiros;
+  public $combustivel;
+}
+class Carro extends Veiculo{
+public $portas;
+public $ano;
+
+public function Carro($mod,$velo,$pas,$com,$p,$a){
+  $this->modelo = $mod;
+  $this->velocidade = $velo;
+  $this->passageiros = $pas;
+  $this->combustivel = $com;
+  $this->portas = $p;
+  $this->ano = $a;
+}
+
+}
+class Aviao extends Veiculo{
+public $uso;
+public $tipo;
+
+public function aviao($mod,$velo,$pas,$com,$u,$t){
+  $this->modelo = $mod;
+  $this->velocidade = $velo;
+  $this->passageiros = $pas;
+  $this->combustivel = $com;
+  $this->uso = $u;
+  $this->tipo = $t;
+}}
+$c1 = new Carro("jipe","200 KM/h",5,"300 litros",2,1000);
+$c2 = new Carro("celta","110 KM/h",2,"28 litros",4,1002);
+print_r ($c1);
+print_r ($c2);
+$av1 = new Aviao("EMB-200","200 KM/h",1,"120 litros","agricola","Aeronave utilitária para agricola");
+$av2 = new Aviao("Boeing 787 MAX","1 051  KM/h",420,"20.000 litros","transporte","Aeronave comercial");
+print_r ($av1);
+print_r ($av2);
+?>
