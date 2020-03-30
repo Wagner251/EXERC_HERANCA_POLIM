@@ -1,0 +1,36 @@
+//Vinicius Catelan e Wagner Evandro
+
+<?php
+class Animal{
+  public $nome;
+  public $idade;
+  public $som;
+  public $acao;
+}
+Class Cachorro extends Animal{
+  public function Cachorro($no,$ida,$so){
+    $this->nome = $no;
+    $this->idade = $ida;
+    $this->som = $so;
+    $this->acao= "correr";
+
+  }
+}
+Class Cavalo extends Animal{
+   public function Cavalo($no,$ida,$so){
+    $this->nome = $no;
+    $this->idade = $ida;
+    $this->som = $so;
+    $this->acao= "correr";
+
+  }
+}
+Class Preguica extends Animal{
+  public function Preguica($no,$ida,$so){
+    $this->nome = $no;
+    $this->idade = $ida;
+    $this->som = $so;
+    $this->acao= "subir na arvore";
+  }
+}
+?>
